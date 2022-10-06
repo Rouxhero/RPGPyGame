@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="rPGPyGame" nsURI="http://www.example.org/rPGPyGame" nsPrefix="rPGPyGame">
+  <eClassifiers xsi:type="ecore:EClass" name="Game">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="views" lowerBound="1" upperBound="-1"
+        eType="#//view" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="view" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MenuView" eSuperTypes="#//view"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GameView" eSuperTypes="#//view"/>
+</ecore:EPackage>

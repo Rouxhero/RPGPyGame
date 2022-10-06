@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated rPGPyGame -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="rPGPyGame.presentation.RPGPyGameModelWizardID"
+            name="%_UI_RPGPyGameModelWizard_label"
+            class="rPGPyGame.presentation.RPGPyGameModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/RPGPyGameModelFile.gif">
+         <description>%_UI_RPGPyGameModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated rPGPyGame -->
+      <editor
+            id="rPGPyGame.presentation.RPGPyGameEditorID"
+            name="%_UI_RPGPyGameEditor_label"
+            icon="icons/full/obj16/RPGPyGameModelFile.gif"
+            extensions="rpgpygame"
+            class="rPGPyGame.presentation.RPGPyGameEditor"
+            contributorClass="rPGPyGame.presentation.RPGPyGameActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
