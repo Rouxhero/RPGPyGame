@@ -13,7 +13,29 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rPGPyGame.ecore#//Game/views"/>
     </genClasses>
     <genClasses ecoreClass="rPGPyGame.ecore#//view"/>
-    <genClasses ecoreClass="rPGPyGame.ecore#//MenuView"/>
+    <genClasses ecoreClass="rPGPyGame.ecore#//MenuView">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rPGPyGame.ecore#//MenuView/elements"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rPGPyGame.ecore#//MenuView/nameID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rPGPyGame.ecore#//MenuView/isFirst"/>
+    </genClasses>
     <genClasses ecoreClass="rPGPyGame.ecore#//GameView"/>
+    <genClasses ecoreClass="rPGPyGame.ecore#//Button">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rPGPyGame.ecore#//Button/text"/>
+    </genClasses>
+    <genClasses ecoreClass="rPGPyGame.ecore#//ClassicButton"/>
+    <genClasses ecoreClass="rPGPyGame.ecore#//EditButton"/>
+    <genClasses ecoreClass="rPGPyGame.ecore#//NoSelectButton"/>
+    <genClasses ecoreClass="rPGPyGame.ecore#//Text">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rPGPyGame.ecore#//Text/content"/>
+    </genClasses>
+    <genClasses ecoreClass="rPGPyGame.ecore#//Element">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rPGPyGame.ecore#//Element/nameID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rPGPyGame.ecore#//Element/orderLayer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rPGPyGame.ecore#//Element/colorBG"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rPGPyGame.ecore#//Element/colorFG"/>
+    </genClasses>
+    <genClasses ecoreClass="rPGPyGame.ecore#//ActionButton">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rPGPyGame.ecore#//ActionButton/dest"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

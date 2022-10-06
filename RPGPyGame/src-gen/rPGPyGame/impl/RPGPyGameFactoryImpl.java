@@ -62,6 +62,16 @@ public class RPGPyGameFactoryImpl extends EFactoryImpl implements RPGPyGameFacto
 			return createMenuView();
 		case RPGPyGamePackage.GAME_VIEW:
 			return createGameView();
+		case RPGPyGamePackage.CLASSIC_BUTTON:
+			return createClassicButton();
+		case RPGPyGamePackage.EDIT_BUTTON:
+			return createEditButton();
+		case RPGPyGamePackage.NO_SELECT_BUTTON:
+			return createNoSelectButton();
+		case RPGPyGamePackage.TEXT:
+			return createText();
+		case RPGPyGamePackage.ACTION_BUTTON:
+			return createActionButton();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -95,6 +105,56 @@ public class RPGPyGameFactoryImpl extends EFactoryImpl implements RPGPyGameFacto
 	public GameView createGameView() {
 		GameViewImpl gameView = new GameViewImpl();
 		return gameView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ClassicButton createClassicButton() {
+		ClassicButtonImpl classicButton = new ClassicButtonImpl();
+		return classicButton;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EditButton createEditButton() {
+		EditButtonImpl editButton = new EditButtonImpl();
+		return editButton;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NoSelectButton createNoSelectButton() {
+		NoSelectButtonImpl noSelectButton = new NoSelectButtonImpl();
+		return noSelectButton;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Text createText() {
+		TextImpl text = new TextImpl();
+		return text;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ActionButton createActionButton() {
+		ActionButtonImpl actionButton = new ActionButtonImpl();
+		return actionButton;
 	}
 
 	/**

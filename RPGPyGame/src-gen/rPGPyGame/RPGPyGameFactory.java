@@ -49,6 +49,51 @@ public interface RPGPyGameFactory extends EFactory {
 	GameView createGameView();
 
 	/**
+	 * Returns a new object of class '<em>Classic Button</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Classic Button</em>'.
+	 * @generated
+	 */
+	ClassicButton createClassicButton();
+
+	/**
+	 * Returns a new object of class '<em>Edit Button</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Edit Button</em>'.
+	 * @generated
+	 */
+	EditButton createEditButton();
+
+	/**
+	 * Returns a new object of class '<em>No Select Button</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>No Select Button</em>'.
+	 * @generated
+	 */
+	NoSelectButton createNoSelectButton();
+
+	/**
+	 * Returns a new object of class '<em>Text</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Text</em>'.
+	 * @generated
+	 */
+	Text createText();
+
+	/**
+	 * Returns a new object of class '<em>Action Button</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Action Button</em>'.
+	 * @generated
+	 */
+	ActionButton createActionButton();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -87,6 +87,41 @@ public class RPGPyGameAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseButton(Button object) {
+			return createButtonAdapter();
+		}
+
+		@Override
+		public Adapter caseClassicButton(ClassicButton object) {
+			return createClassicButtonAdapter();
+		}
+
+		@Override
+		public Adapter caseEditButton(EditButton object) {
+			return createEditButtonAdapter();
+		}
+
+		@Override
+		public Adapter caseNoSelectButton(NoSelectButton object) {
+			return createNoSelectButtonAdapter();
+		}
+
+		@Override
+		public Adapter caseText(Text object) {
+			return createTextAdapter();
+		}
+
+		@Override
+		public Adapter caseElement(Element object) {
+			return createElementAdapter();
+		}
+
+		@Override
+		public Adapter caseActionButton(ActionButton object) {
+			return createActionButtonAdapter();
+		}
+
+		@Override
 		public Adapter defaultCase(EObject object) {
 			return createEObjectAdapter();
 		}
@@ -158,6 +193,104 @@ public class RPGPyGameAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createGameViewAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link rPGPyGame.Button <em>Button</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see rPGPyGame.Button
+	 * @generated
+	 */
+	public Adapter createButtonAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link rPGPyGame.ClassicButton <em>Classic Button</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see rPGPyGame.ClassicButton
+	 * @generated
+	 */
+	public Adapter createClassicButtonAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link rPGPyGame.EditButton <em>Edit Button</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see rPGPyGame.EditButton
+	 * @generated
+	 */
+	public Adapter createEditButtonAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link rPGPyGame.NoSelectButton <em>No Select Button</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see rPGPyGame.NoSelectButton
+	 * @generated
+	 */
+	public Adapter createNoSelectButtonAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link rPGPyGame.Text <em>Text</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see rPGPyGame.Text
+	 * @generated
+	 */
+	public Adapter createTextAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link rPGPyGame.Element <em>Element</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see rPGPyGame.Element
+	 * @generated
+	 */
+	public Adapter createElementAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link rPGPyGame.ActionButton <em>Action Button</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see rPGPyGame.ActionButton
+	 * @generated
+	 */
+	public Adapter createActionButtonAdapter() {
 		return null;
 	}
 

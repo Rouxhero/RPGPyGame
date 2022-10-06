@@ -2,17 +2,25 @@
  */
 package rPGPyGame.impl;
 
+import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
+import rPGPyGame.ActionButton;
+import rPGPyGame.Button;
+import rPGPyGame.ClassicButton;
+import rPGPyGame.EditButton;
+import rPGPyGame.Element;
 import rPGPyGame.Game;
 import rPGPyGame.GameView;
 import rPGPyGame.MenuView;
+import rPGPyGame.NoSelectButton;
 import rPGPyGame.RPGPyGameFactory;
 import rPGPyGame.RPGPyGamePackage;
+import rPGPyGame.Text;
 import rPGPyGame.view;
 
 /**
@@ -49,6 +57,55 @@ public class RPGPyGamePackageImpl extends EPackageImpl implements RPGPyGamePacka
 	 * @generated
 	 */
 	private EClass gameViewEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass buttonEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass classicButtonEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass editButtonEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass noSelectButtonEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass textEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass elementEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass actionButtonEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -155,8 +212,161 @@ public class RPGPyGamePackageImpl extends EPackageImpl implements RPGPyGamePacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getMenuView_Elements() {
+		return (EReference) menuViewEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getMenuView_NameID() {
+		return (EAttribute) menuViewEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getMenuView_IsFirst() {
+		return (EAttribute) menuViewEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getGameView() {
 		return gameViewEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getButton() {
+		return buttonEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getButton_Text() {
+		return (EAttribute) buttonEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getClassicButton() {
+		return classicButtonEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getEditButton() {
+		return editButtonEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getNoSelectButton() {
+		return noSelectButtonEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getText() {
+		return textEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getText_Content() {
+		return (EAttribute) textEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getElement() {
+		return elementEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getElement_NameID() {
+		return (EAttribute) elementEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getElement_OrderLayer() {
+		return (EAttribute) elementEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getElement_ColorBG() {
+		return (EAttribute) elementEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getElement_ColorFG() {
+		return (EAttribute) elementEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getActionButton() {
+		return actionButtonEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getActionButton_Dest() {
+		return (EReference) actionButtonEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -194,8 +404,32 @@ public class RPGPyGamePackageImpl extends EPackageImpl implements RPGPyGamePacka
 		viewEClass = createEClass(VIEW);
 
 		menuViewEClass = createEClass(MENU_VIEW);
+		createEReference(menuViewEClass, MENU_VIEW__ELEMENTS);
+		createEAttribute(menuViewEClass, MENU_VIEW__NAME_ID);
+		createEAttribute(menuViewEClass, MENU_VIEW__IS_FIRST);
 
 		gameViewEClass = createEClass(GAME_VIEW);
+
+		buttonEClass = createEClass(BUTTON);
+		createEAttribute(buttonEClass, BUTTON__TEXT);
+
+		classicButtonEClass = createEClass(CLASSIC_BUTTON);
+
+		editButtonEClass = createEClass(EDIT_BUTTON);
+
+		noSelectButtonEClass = createEClass(NO_SELECT_BUTTON);
+
+		textEClass = createEClass(TEXT);
+		createEAttribute(textEClass, TEXT__CONTENT);
+
+		elementEClass = createEClass(ELEMENT);
+		createEAttribute(elementEClass, ELEMENT__NAME_ID);
+		createEAttribute(elementEClass, ELEMENT__ORDER_LAYER);
+		createEAttribute(elementEClass, ELEMENT__COLOR_BG);
+		createEAttribute(elementEClass, ELEMENT__COLOR_FG);
+
+		actionButtonEClass = createEClass(ACTION_BUTTON);
+		createEReference(actionButtonEClass, ACTION_BUTTON__DEST);
 	}
 
 	/**
@@ -229,6 +463,12 @@ public class RPGPyGamePackageImpl extends EPackageImpl implements RPGPyGamePacka
 		// Add supertypes to classes
 		menuViewEClass.getESuperTypes().add(this.getview());
 		gameViewEClass.getESuperTypes().add(this.getview());
+		buttonEClass.getESuperTypes().add(this.getElement());
+		classicButtonEClass.getESuperTypes().add(this.getButton());
+		editButtonEClass.getESuperTypes().add(this.getButton());
+		noSelectButtonEClass.getESuperTypes().add(this.getButton());
+		textEClass.getESuperTypes().add(this.getElement());
+		actionButtonEClass.getESuperTypes().add(this.getButton());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(gameEClass, Game.class, "Game", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -240,9 +480,49 @@ public class RPGPyGamePackageImpl extends EPackageImpl implements RPGPyGamePacka
 
 		initEClass(menuViewEClass, MenuView.class, "MenuView", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getMenuView_Elements(), this.getElement(), null, "elements", null, 0, -1, MenuView.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMenuView_NameID(), ecorePackage.getEString(), "nameID", null, 0, 1, MenuView.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMenuView_IsFirst(), ecorePackage.getEBoolean(), "isFirst", null, 0, 1, MenuView.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(gameViewEClass, GameView.class, "GameView", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(buttonEClass, Button.class, "Button", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getButton_Text(), ecorePackage.getEString(), "text", null, 0, 1, Button.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(classicButtonEClass, ClassicButton.class, "ClassicButton", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(editButtonEClass, EditButton.class, "EditButton", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(noSelectButtonEClass, NoSelectButton.class, "NoSelectButton", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(textEClass, Text.class, "Text", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getText_Content(), ecorePackage.getEString(), "content", null, 0, 1, Text.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(elementEClass, Element.class, "Element", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getElement_NameID(), ecorePackage.getEString(), "nameID", null, 0, 1, Element.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getElement_OrderLayer(), ecorePackage.getEInt(), "orderLayer", null, 0, 1, Element.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getElement_ColorBG(), ecorePackage.getEString(), "colorBG", null, 0, 1, Element.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getElement_ColorFG(), ecorePackage.getEString(), "colorFG", null, 0, 1, Element.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(actionButtonEClass, ActionButton.class, "ActionButton", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getActionButton_Dest(), this.getview(), null, "dest", null, 1, 1, ActionButton.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

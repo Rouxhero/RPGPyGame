@@ -6,6 +6,29 @@
         eType="#//view" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="view" abstract="true"/>
-  <eClassifiers xsi:type="ecore:EClass" name="MenuView" eSuperTypes="#//view"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MenuView" eSuperTypes="#//view">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elements" upperBound="-1"
+        eType="#//Element" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nameID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isFirst" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="GameView" eSuperTypes="#//view"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Button" abstract="true" eSuperTypes="#//Element">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ClassicButton" eSuperTypes="#//Button"/>
+  <eClassifiers xsi:type="ecore:EClass" name="EditButton" eSuperTypes="#//Button"/>
+  <eClassifiers xsi:type="ecore:EClass" name="NoSelectButton" eSuperTypes="#//Button"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Text" eSuperTypes="#//Element">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="content" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Element" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nameID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="orderLayer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="colorBG" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="colorFG" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ActionButton" eSuperTypes="#//Button">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dest" lowerBound="1" eType="#//view"/>
+  </eClassifiers>
 </ecore:EPackage>

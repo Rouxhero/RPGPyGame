@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rPGPyGame:Game xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rPGPyGame="http://www.example.org/rPGPyGame">
+  <views xsi:type="rPGPyGame:MenuView" nameID="MainMenu" isFirst="true">
+    <elements xsi:type="rPGPyGame:Text" nameID="mainTitle" colorBG="rgb()" colorFG="rgb()" content="MyDemoGame"/>
+    <elements xsi:type="rPGPyGame:ActionButton" nameID="playButton" orderLayer="1" colorBG="rgb()" colorFG="rgb()" text="play" dest="//@views.1"/>
+    <elements xsi:type="rPGPyGame:ClassicButton" nameID="quitButton" orderLayer="3" colorBG="rgb()" colorFG="rgb()" text="quit"/>
+  </views>
+  <views xsi:type="rPGPyGame:MenuView" nameID="playMenu">
+    <elements xsi:type="rPGPyGame:Text" nameID="title" orderLayer="1" colorBG="rgb()" colorFG="rgb()" content="Select a mode"/>
+    <elements xsi:type="rPGPyGame:ClassicButton" nameID="backButton" orderLayer="3" colorBG="rgb()" colorFG="rgb()" text="back"/>
+  </views>
+</rPGPyGame:Game>

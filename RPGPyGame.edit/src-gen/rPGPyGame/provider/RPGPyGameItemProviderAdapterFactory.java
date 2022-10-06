@@ -142,6 +142,121 @@ public class RPGPyGameItemProviderAdapterFactory extends RPGPyGameAdapterFactory
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link rPGPyGame.ClassicButton} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ClassicButtonItemProvider classicButtonItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link rPGPyGame.ClassicButton}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createClassicButtonAdapter() {
+		if (classicButtonItemProvider == null) {
+			classicButtonItemProvider = new ClassicButtonItemProvider(this);
+		}
+
+		return classicButtonItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link rPGPyGame.EditButton} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected EditButtonItemProvider editButtonItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link rPGPyGame.EditButton}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createEditButtonAdapter() {
+		if (editButtonItemProvider == null) {
+			editButtonItemProvider = new EditButtonItemProvider(this);
+		}
+
+		return editButtonItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link rPGPyGame.NoSelectButton} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected NoSelectButtonItemProvider noSelectButtonItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link rPGPyGame.NoSelectButton}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createNoSelectButtonAdapter() {
+		if (noSelectButtonItemProvider == null) {
+			noSelectButtonItemProvider = new NoSelectButtonItemProvider(this);
+		}
+
+		return noSelectButtonItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link rPGPyGame.Text} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected TextItemProvider textItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link rPGPyGame.Text}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createTextAdapter() {
+		if (textItemProvider == null) {
+			textItemProvider = new TextItemProvider(this);
+		}
+
+		return textItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link rPGPyGame.ActionButton} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ActionButtonItemProvider actionButtonItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link rPGPyGame.ActionButton}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createActionButtonAdapter() {
+		if (actionButtonItemProvider == null) {
+			actionButtonItemProvider = new ActionButtonItemProvider(this);
+		}
+
+		return actionButtonItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -246,6 +361,16 @@ public class RPGPyGameItemProviderAdapterFactory extends RPGPyGameAdapterFactory
 			menuViewItemProvider.dispose();
 		if (gameViewItemProvider != null)
 			gameViewItemProvider.dispose();
+		if (classicButtonItemProvider != null)
+			classicButtonItemProvider.dispose();
+		if (editButtonItemProvider != null)
+			editButtonItemProvider.dispose();
+		if (noSelectButtonItemProvider != null)
+			noSelectButtonItemProvider.dispose();
+		if (textItemProvider != null)
+			textItemProvider.dispose();
+		if (actionButtonItemProvider != null)
+			actionButtonItemProvider.dispose();
 	}
 
 }

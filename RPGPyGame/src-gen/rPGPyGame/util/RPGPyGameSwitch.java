@@ -98,6 +98,75 @@ public class RPGPyGameSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case RPGPyGamePackage.BUTTON: {
+			Button button = (Button) theEObject;
+			T result = caseButton(button);
+			if (result == null)
+				result = caseElement(button);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case RPGPyGamePackage.CLASSIC_BUTTON: {
+			ClassicButton classicButton = (ClassicButton) theEObject;
+			T result = caseClassicButton(classicButton);
+			if (result == null)
+				result = caseButton(classicButton);
+			if (result == null)
+				result = caseElement(classicButton);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case RPGPyGamePackage.EDIT_BUTTON: {
+			EditButton editButton = (EditButton) theEObject;
+			T result = caseEditButton(editButton);
+			if (result == null)
+				result = caseButton(editButton);
+			if (result == null)
+				result = caseElement(editButton);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case RPGPyGamePackage.NO_SELECT_BUTTON: {
+			NoSelectButton noSelectButton = (NoSelectButton) theEObject;
+			T result = caseNoSelectButton(noSelectButton);
+			if (result == null)
+				result = caseButton(noSelectButton);
+			if (result == null)
+				result = caseElement(noSelectButton);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case RPGPyGamePackage.TEXT: {
+			Text text = (Text) theEObject;
+			T result = caseText(text);
+			if (result == null)
+				result = caseElement(text);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case RPGPyGamePackage.ELEMENT: {
+			Element element = (Element) theEObject;
+			T result = caseElement(element);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case RPGPyGamePackage.ACTION_BUTTON: {
+			ActionButton actionButton = (ActionButton) theEObject;
+			T result = caseActionButton(actionButton);
+			if (result == null)
+				result = caseButton(actionButton);
+			if (result == null)
+				result = caseElement(actionButton);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		default:
 			return defaultCase(theEObject);
 		}
@@ -160,6 +229,111 @@ public class RPGPyGameSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseGameView(GameView object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Button</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Button</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseButton(Button object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Classic Button</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Classic Button</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseClassicButton(ClassicButton object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Edit Button</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Edit Button</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEditButton(EditButton object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>No Select Button</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>No Select Button</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNoSelectButton(NoSelectButton object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Text</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Text</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseText(Text object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Element</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Element</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseElement(Element object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Action Button</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Action Button</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseActionButton(ActionButton object) {
 		return null;
 	}
 

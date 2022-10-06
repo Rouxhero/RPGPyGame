@@ -1,0 +1,17 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generate.
+ */]
+[module generate('http://www.example.org/rPGPyGame')]
+
+
+[**
+ * The documentation of the template generateElement.
+ * @param aGame
+ */]
+[template public generateElement(aGame : Game)]
+[comment @main/]
+[file ('main.py', false, 'UTF-8')]
+print("Generation ok")
+[/file]
+[/template]
